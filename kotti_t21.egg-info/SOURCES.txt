@@ -1,0 +1,12 @@
+README.txt
+setup.cfg
+setup.py
+kotti_t21/__init__.py
+kotti_t21/fanstatic.py
+kotti_t21.egg-info/PKG-INFO
+kotti_t21.egg-info/SOURCES.txt
+kotti_t21.egg-info/dependency_links.txt
+kotti_t21.egg-info/entry_points.txt
+kotti_t21.egg-info/not-zip-safe
+kotti_t21.egg-info/requires.txt
+kotti_t21.egg-info/top_level.txt

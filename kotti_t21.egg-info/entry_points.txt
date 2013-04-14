@@ -1,0 +1,3 @@
+[fanstatic.libraries]
+kotti_t21 = kotti_t21.fanstatic:library
+
