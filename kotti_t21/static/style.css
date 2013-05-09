@@ -1,19 +1,39 @@
+@font-face {
+font-family: Kremlin;
+src: url('/fanstatic/kotti_t21/kremlin.ttf'); //http://www.fontsquirrel.com/tools/webfont-generator
+font-style: normal;
+font-weight: normal;
+}
+
 body {
     background: #fff;
 }
 
+h1 {
+  color: #C51A20;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+h2, h3 {
+  color: #315f9b;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
 h1#logo {
-    background: url("/fanstatic/kotti_t21/images/terminal21.png") no-repeat;
-    display: inline-block;
-    height: 73px;
-    width: 580px;
-    max-width: 100%;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
+    font-size: 340%;
+    font-family: "Kremlin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px #999;
 }
 
 h1#logo a {
-    display: block;
-    visibility: hidden;
+    text-decoration: none;
+    color: #315F9B;
+}
+
+.red {
+  color: #C51A20;
 }
 
 .rotation {
@@ -22,3 +42,22 @@ h1#logo a {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
 }
 
+p.description {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 0.9em;
+}
+
+div.footer {
+  margin-top: 2em;
+}
+
+p.footer {
+  color: #999;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.navbar-inverse .nav > li > a.footer {
+  color: #08c;
+}

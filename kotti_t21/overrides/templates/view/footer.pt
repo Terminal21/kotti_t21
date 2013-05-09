@@ -1,0 +1,10 @@
+<div  class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <p class="pull-right footer">Terminal.21 e.V. | <span style="white-space:nowrap">Richard-Wagner-Straße 11</span> | 06114 | Halle (Saale)</p>
+      <ul class="nav">
+        <li title="Impressum"><a class="footer" href="/kontakt/">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

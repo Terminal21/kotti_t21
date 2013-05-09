@@ -28,20 +28,25 @@
                view-${request.view_name or 'default'}
                ${api.body_css_class}">
     <div class="container">
-        <h1 id="logo"><a href="${request.application_url}/">${api.site_title}</a></h1>
+      <h1 id="logo"><a href="${request.application_url}/">Terminal.<span class="red">21</span></a></h1>
     </div>
+
     <div class="container">
     <nav tal:replace="api.render_template('kotti:templates/view/nav.pt')" />
+
+    <div class="container">
+      <div tal:replace="api.render_template('kotti:templates/edit/breadcrumbs.pt')" />
+    </div>
+
+    <div class="container" tal:condition="len(api.lineage) == 1">
+     <rotation tal:replace="api.render_template('kotti:templates/view/rotation.pt')" />
+    </div>
+
     <div tal:condition="request.user is not None"
         tal:replace="api.render_template('kotti:templates/editor-bar.pt')" />
     </div>
 
     <div class="container">
-    <rotation tal:replace="api.render_template('kotti:templates/view/rotation.pt')" />
-    </div>
-    <div class="container">
-      <div tal:replace="api.render_template('kotti:templates/edit/breadcrumbs.pt')" />
-
       <div class="row">
         <div class="span3 left-column"
              tal:condition="page_slots.left"
@@ -73,9 +78,10 @@
              tal:content="api.render_template('kotti:templates/render_column_slot.pt', slot=page_slots.right)">
         </div>
       </div>
+    </div>
 
+    <div class="container footer">
       <footer tal:replace="api.render_template('kotti:templates/view/footer.pt')"></footer>
-
     </div>
 
     <tal:slots tal:define="snippets page_slots.beforebodyend"
