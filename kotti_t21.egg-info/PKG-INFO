@@ -1,9 +1,9 @@
 Metadata-Version: 1.1
 Name: kotti-t21
-Version: 1.0dev
+Version: 1.0
 Summary: AddOn for Kotti
-Home-page: http://pypi.python.org/pypi/
-Author: Stefan@Terminal.21
+Home-page: http://www.terminal21.de
+Author: stefan@terminal21.de
 Author-email: stefan@terminal21.de
 License: bsd
 Description: Introduction
@@ -11,11 +11,6 @@ Description: Introduction
         
         
         
-        Changelog
-        =========
-        
-        0.1 (Unreleased)
-        ----------------
         
 Keywords: kotti addon
 Platform: UNKNOWN
