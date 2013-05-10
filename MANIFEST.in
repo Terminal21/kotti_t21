@@ -1,3 +1,4 @@
 include kotti_t21/static/*
+include kotti_t21/static/rotation/*
 include kotti_t21/overrides/templates/*
 include kotti_t21/overrides/templates/view/*
