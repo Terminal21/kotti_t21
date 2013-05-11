@@ -1,2 +1,11 @@
-<img class="rotation" src="/fanstatic/kotti_t21/rotation/kopenhagen077.jpg">
+<?python
+import kotti_t21
+import random
+from os import listdir,path
+
+images =  listdir(path.join(path.dirname(kotti_t21.__file__), 'static/rotation'))
+random.shuffle(images)
+?>
+
+<img class="rotation" tal:attributes="src '/fanstatic/kotti_t21/rotation/'+images[0]">
 
